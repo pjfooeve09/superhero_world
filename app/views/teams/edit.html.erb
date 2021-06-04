@@ -1,0 +1,18 @@
+<h1>EDIT TEAM</h1>
+
+<%= form_for(@team) do |f| %>
+
+  <%= render partial: "layouts/error", locals: {object: @team} %>
+
+  <div class="field">
+    Team Name
+    <%= f.text_field :name %>
+    <br>
+    <br>
+  </div>    
+    <%= f.submit %>
+  </div>
+
+<% end %>
+
+<%=link_to "Delete Team", user_team_path(current_user, @team), method: 'delete' %>

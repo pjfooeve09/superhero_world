@@ -1,0 +1,22 @@
+<% if current_user.teams.empty? || current_user.superheroes.empty?%>
+    <h3>You do not have any superheroes, please click <%= link_to 'here', new_user_superhero_path(current_user) %> to create your superheroes </h3>
+<% end %>  
+
+<% current_user.teams.uniq.each do |team| %>
+    
+    <div class="team">
+    <h2><%= team.name %></h3> <%=button_to "Edit/Delete Team", edit_user_team_path(current_user, team), {class: "button"} %>
+    </div>
+    
+    <div class="superhero">
+        <% team.superheroes.each do |superhero| %>     
+            <span class="superhero-name"><%= superhero.name %></span> <%=link_to "Edit/Delete Superhero", edit_user_superhero_path(current_user, superhero), {class: "edit-link"} %> 
+            <% superhero.superpowers.each do |superpower| %>
+                <li class='superpower'><%= superpower.name %></li>
+            <br>
+        <% end %>      
+    <% end %>
+    </div>
+
+<% end %>
+

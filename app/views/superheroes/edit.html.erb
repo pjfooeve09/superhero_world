@@ -1,0 +1,30 @@
+<h1>EDIT SUPERHERO</h1>
+
+<%= form_for(@superhero) do |f| %>
+
+  <%= render partial: "layouts/error", locals: {object: @superhero} %>
+
+  <div class="field">
+    Superhero Name
+    <%= f.text_field :name %>
+    <br>
+    <br>
+  </div>
+      
+  <div class="field">
+   Add Superpowers:
+    <%= f.fields_for :superpowers, @superhero.superpowers do |superpower_fields| %>
+    <br>
+      <%= superpower_fields.text_field :name, placeholder: "Enter Superpower" %>
+    <% end %>
+  </div>
+  
+  <div class="actions">
+  <br>
+    <%= f.submit %>
+  </div>
+
+<% end %>
+
+<%=link_to "Delete Superhero", user_superhero_path(current_user, @superhero), method: 'delete' %>
+

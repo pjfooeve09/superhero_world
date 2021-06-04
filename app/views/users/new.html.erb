@@ -1,0 +1,29 @@
+<h1>Welcome to Superhero Maker!</h1>
+<br>
+<h3>Sign Up Below</h3>
+
+<%= form_for(@user) do |f| %>
+
+    <%= render partial: "layouts/error", locals: {object: @user}  %>
+    
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+    <br/>
+  
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <br/>
+  
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+    <br/>
+  
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+    <br/>
+  
+    <%= f.submit 'Signup' %>
+
+    <p>Already have an account? Log in <%= link_to "here", login_path %></p>
+
+<% end %> 

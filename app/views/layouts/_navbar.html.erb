@@ -1,0 +1,9 @@
+<header>
+    <nav>
+        <a><%=link_to "Home", user_path(current_user.id) %></a>
+        <a><%=link_to "Create a New Superhero", new_superhero_path %></a>
+        <a><%=link_to "All Superheroes", superheroes_path %></a>
+        <a><%=link_to "Team With the Most Superheroes", "/teams/:team_with_most_superheroes"%></a>
+        <a><%=link_to "Logout", logout_path %></a>
+    </nav>
+</header>
