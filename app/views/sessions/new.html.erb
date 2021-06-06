@@ -15,8 +15,15 @@
         <br/>   
         <%= submit_tag "Login" %>
         <br/>
-        or <%= link_to('Log in with Facebook!', '/auth/facebook', method: :post) %> 
-
-        <p>Don't have an account? Sign Up <%= link_to "here", signup_path %></p>
 <% end %>
+
+<p>or <%= button_to('Log in with Facebook!', '/auth/facebook', method: :post) %></p>
+
+<p>Don't have an account? Sign Up <%= link_to "here", signup_path %></p>
+
+
+
+
+
+
     

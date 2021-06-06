@@ -1,6 +1,6 @@
 <% if @team.last.superheroes.count > @team.first.superheroes.count %>
-    <h2>The team with the most superheroes is "<%= @team.last.name %>" with a total number of <%= @team.last.superheroes.count %> superheroes.</h2> 
+    <h2>The team with the most superheroes created on this web app is "<%= @team.last.name %>" with a total number of <%= @team.last.superheroes.count %> superheroes.</h2> 
 <% else %>
-    <h2>The team with the most superheroes is "<%= @team.first.name %>" with a total number of <%= @team.first.superheroes.count %> superheroes.</h2> 
+    <h2>The team with the most superheroes created on this web app is "<%= @team.first.name %>" with a total number of <%= @team.first.superheroes.count %> superheroes.</h2> 
 <% end %>
 

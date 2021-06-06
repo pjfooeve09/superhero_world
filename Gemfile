@@ -29,6 +29,7 @@ gem 'dotenv-rails'
 gem 'omniauth-rails_csrf_protection'
 gem 'omniauth-facebook'
 
+gem 'thin'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -68,3 +69,5 @@ group :development do
   gem 'ngrok-tunnel'
   gem 'tty-box'
 end
+
+

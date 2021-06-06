@@ -18,6 +18,6 @@ Rails.application.routes.draw do
   get "/logout", to: "sessions#destroy"
   delete "/logout", to: "sessions#destroy"
 
-  get 'auth/:provider/callback', to: 'sessions#facebookAuth'
-  get 'auth/failure', to: redirect('/')
+  get '/auth/:provider/callback', to: 'sessions#facebookAuth'
+  get '/auth/failure', to: redirect('/')
 end

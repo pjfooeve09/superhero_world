@@ -52,6 +52,7 @@ if ENV["RACK_ENV"] == "development"
         addr: ENV.fetch("PORT") { 3000 },
         config: File.join(ENV["HOME"], ".ngrok2", "ngrok.yml"),
       }
+      
   
       # If you have a paid plan you can create tunnels with custom subdomains
       options[:subdomain] = ENV.fetch("NGROK_SUBDOMAIN") { nil }
