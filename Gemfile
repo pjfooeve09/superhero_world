@@ -29,7 +29,9 @@ gem 'dotenv-rails'
 gem 'omniauth-rails_csrf_protection'
 gem 'omniauth-facebook'
 
-gem 'thin'
+group :development do
+  gem "thin"
+end
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
