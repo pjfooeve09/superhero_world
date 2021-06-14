@@ -43,3 +43,4 @@ host.cert
 host.key
 localhost.crt
 localhost.key
+.env

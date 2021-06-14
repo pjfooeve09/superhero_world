@@ -7,6 +7,10 @@ Installation
 
 1. Fork and clone the repository.
 2. Load the repository in your development software.
-3. Run 'bundle install' in your terminal to install any uninstalled dependencies.
+3. In your terminal, run in order:
+    1. 'rails db:migrate'
+    2. 'yarn add @rails/webpacker'
+    3. 'bundle update webpacker'
+    4. 'bundle install'
 4. Run 'thin start --ssl' in your terminal to create a local environment to run the app.
 5. Copy the http address you are given and paste it in your browser to interact with the app.
