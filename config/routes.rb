@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :superheroes
 
   resources :users do
-    resources :teams, only: [:edit, :update, :destroy]
+    resources :teams
     resources :superheroes, only: [:index, :new, :show, :create, :edit, :update, :destroy]
   end
 
