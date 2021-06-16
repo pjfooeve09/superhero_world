@@ -46,7 +46,7 @@ class SuperheroesController < ApplicationController
     private
 
     def superhero_params
-        params.require(:superhero).permit(:id, :name, :user_id, team_ids:[], teams_attributes: [:id, :name], superpowers_attributes: [:id, :name]) #need to use :id, so the fields in form do no duplicate/add new one instead of update existing
+        params.require(:superhero).permit(:id, :name, :user_id, teams_attributes: [:id, :name], superpowers_attributes: [:id, :name]) #need to use :id, so the fields in form do no duplicate/add new one instead of update existing
     end
 
 end

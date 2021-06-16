@@ -22,6 +22,7 @@ class TeamsController < ApplicationController
         @team = Team.find(params[:id])
         @team.delete
         @team.superheroes.destroy_all
+        
         redirect_to user_superheroes_path(current_user)
     end
 
