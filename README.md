@@ -3,7 +3,9 @@ Welcome to Superhero World!
 This Rails app allows users to create a team and add superheroes to their team. It also allows users to add superpowers to the superhero they created. The page "Team With the Most Superheroes" contains the team with the most superheroes that belong to the user who originally created the team. 
 
 •Scaffolded a full functional Ruby on Rails app with full CRUD functionality that follows MVC
+
 •Incorporated a decent amount of async/await functionality
+
 •Created local user session for local authentication using the gem "bcrypt"
 
 Installation
