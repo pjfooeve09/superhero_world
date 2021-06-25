@@ -8,6 +8,8 @@ This Rails app allows users to create a team and add superheroes to their team. 
 
 •Created local user session for local authentication using the gem "bcrypt"
 
+•Incorporated a scope method using advanced SQL to display the team with the most superheroes
+
 Installation
 
 1. Fork and clone the repository.
