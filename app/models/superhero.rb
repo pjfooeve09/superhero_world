@@ -4,7 +4,7 @@ class Superhero < ApplicationRecord
     has_many :teams, through: :superhero_teams
     has_many :superpowers
 
-    validates_presence_of  [:name, :teams, :superpowers]
+    validates_presence_of [:name, :teams, :superpowers]
 
     accepts_nested_attributes_for :teams, reject_if: :all_blank
     accepts_nested_attributes_for :superpowers, reject_if: :all_blank

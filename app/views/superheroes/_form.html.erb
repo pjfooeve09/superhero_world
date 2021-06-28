@@ -12,6 +12,14 @@
     </div>
 
     <div class="field">
+    <% if current_user.teams.exists? %>
+        Select Team:
+        <%= f.collection_check_boxes :team_ids, current_user.teams.uniq, :id, :name %>
+        <br><br>
+    <% end %>
+    </div>
+
+    <div class="field">
      Create a new Team:
       <%= f.fields_for :teams, @superhero.teams.build do |teams_fields| %>
         <%= teams_fields.text_field :name %>
