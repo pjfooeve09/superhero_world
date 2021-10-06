@@ -8,6 +8,8 @@ This Rails app allows users to create a team and add superheroes to their team. 
 
 •Created local user session for local authentication using the gem "bcrypt"
 
+•Implemented OmniAuth to securely sign in with Facebook
+
 •Incorporated a scope method using advanced SQL to display the team with the most superheroes
 
 Installation
