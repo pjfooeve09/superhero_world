@@ -1,4 +1,4 @@
-<% if Team.exists? %>
+<% if @team.exists? %>
     <% if @team.last.superheroes.count > @team.first.superheroes.count %>
         <h2>The team with the most superheroes created on this web app is "<%= @team.last.name %>" with a total number of <%= @team.last.superheroes.count %> superheroes.</h2> 
     <% else %>

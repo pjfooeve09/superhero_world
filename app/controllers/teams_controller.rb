@@ -3,6 +3,7 @@ class TeamsController < ApplicationController
 
     def show
         @team = Team.team_with_most_superheroes
+        #binding.pry
     end
 
     def edit
@@ -26,9 +27,6 @@ class TeamsController < ApplicationController
         redirect_to user_superheroes_path(current_user)
     end
 
-    def team_with_most_superheroes
-        render :show
-    end
 
     private
 
