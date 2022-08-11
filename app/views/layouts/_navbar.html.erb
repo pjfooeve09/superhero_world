@@ -1,5 +1,5 @@
 <header>
-    <nav>
+    <nav class="navbar" style="background-color: #e3f2fd; padding-right: 2rem; text-decoration: none;">
         <a><%=link_to "Home", user_path(current_user.id) %></a>
         <a><%=link_to "Create a New Superhero", new_superhero_path %></a>
         <a><%=link_to "All Superheroes", superheroes_path %></a>
@@ -7,3 +7,7 @@
         <a><%=link_to "Logout", logout_path %></a>
     </nav>
 </header>
+
+
+
+

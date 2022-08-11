@@ -5,7 +5,7 @@
 <% current_user.teams.uniq.each do |team| %>
     
     <div class="team">
-    <h2><%= team.name %></h3> <%=button_to "Edit/Delete Team", edit_user_team_path(current_user, team), {class: "button"} %>
+    <h2><%= team.name %></h3> <%=button_to "Edit/Delete Team", edit_user_team_path(current_user, team), {class: "btn btn-block btn-primary btn-float m-t-25"} %>
     </div>
     
     <div class="superhero">
