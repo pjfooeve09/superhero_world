@@ -23,3 +23,6 @@ Installation
     4. 'bundle install'
 4. Run 'thin start --ssl' in your terminal to create a local environment to run the app.
 5. Copy the http address you are given and paste it in your browser to interact with the app.
+
+
+![Screen Shot 2022-08-10 at 7 09 15 PM](https://user-images.githubusercontent.com/68364641/184053360-24947dde-59f4-4f3f-b084-2ec64c1ad224.png)
